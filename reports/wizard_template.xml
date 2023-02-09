@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+
+        <template id="wizard_report_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <div class="text-center">
+                            <h2>Patient's Informations</h2>
+                        </div>
+
+                        <table class="table table-condensed" style="border: 2px solid black !important;overflow:hidden">
+                            <tr>
+                                <td style="color:black;font-size:bold;">Patient</td>
+                            </tr>
+                            <td width="50%">
+                                <p style="text-align:left; padding:0;font-size:bold;">
+                                    <strong>Name:</strong>
+                                    <span t-esc="form['first_name']"/>
+                                    <span t-esc="form['last_name']"/>
+                                    <br/>
+                                    <strong>Birth Date:</strong>
+                                    <span t-esc="form['birth_date']"/>
+                                    <br/>
+                                    <strong>Email:</strong>
+                                    <span t-esc="form['email']"/>
+                                </p>
+                            </td>
+
+                            <td width="50%">
+                                <p style="text-align:left; padding:0;font-size:bold;">
+                                    <strong>CR Ratio:</strong>
+                                    <span t-esc="form['cr_ratio']"/>
+                                    <br/>
+                                    <strong>Blood Type:</strong>
+                                    <span t-esc="form['blood_type']"/>
+                                </p>
+                            </td>
+                        </table>
+                        <strong>Patient's History:</strong>
+                        <span t-esc="form['patient_history']"/>
+                    </div>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

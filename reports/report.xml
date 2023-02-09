@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="hms_report" model="ir.actions.report">
+            <field name="name">Patient Details</field>
+            <field name="model">hms.patient</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">iti.hms_patient_template</field>
+            <field name="report_file">iti.hms_patient_template</field>
+            <field name="binding_model_id" ref="model_hms_patient"/>
+            <field name="binding_type">report</field>
+
+        </record>
+
+          <record id="wizard_report" model="ir.actions.report">
+            <field name="name">Patient Information</field>
+            <field name="model">wizard.example</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">iti.wizard_report_template</field>
+            <field name="report_file">iti.wizard_report_template</field>
+            <field name="binding_model_id" ref="model_wizard_example"/>
+            <field name="binding_type">report</field>
+        </record>
+
+<!--        <record id="hms_report_log" model="ir.actions.report">-->
+<!--            <field name="name">Patient Details</field>-->
+<!--            <field name="model">log.history</field>-->
+<!--            <field name="report_type">qweb-pdf</field>-->
+<!--            <field name="report_name">iti.hms_patient_template</field>-->
+<!--            <field name="report_file">iti.hms_patient_template</field>-->
+<!--            <field name="binding_model_id" ref="model_hms_patient"/>-->
+<!--            <field name="binding_type">report</field>-->
+
+<!--        </record>-->
+    </data>
+
+
+</odoo>

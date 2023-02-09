@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="wizard_report" model="ir.actions.report">
+            <field name="name">Patient Information</field>
+            <field name="model">wizard.example</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">iti.wizard_report_template</field>
+            <field name="report_file">iti.wizard_report_template</field>
+            <field name="binding_model_id" ref="model_wizard_example"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>
